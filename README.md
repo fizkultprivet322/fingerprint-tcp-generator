@@ -302,6 +302,6 @@ This project is protected under the [MIT LICENSE](https://choosealicense.com/lic
 
 ## 🙌 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
-
+- [Main Knowledge Base](https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967/)
+- [Ja3 Knowledge Base](https://github.com/salesforce/ja3)
 ---
