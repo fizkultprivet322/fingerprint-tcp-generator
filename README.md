@@ -2,7 +2,6 @@
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>FINGERPRINT-TCP-GENERATOR</h1>
 <p align="left">
-	<img src="https://img.shields.io/github/license/fizkultprivet322/fingerprint-tcp-generator?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/fizkultprivet322/fingerprint-tcp-generator?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/fizkultprivet322/fingerprint-tcp-generator?style=default&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/fizkultprivet322/fingerprint-tcp-generator?style=default&color=0080ff" alt="repo-language-count">
