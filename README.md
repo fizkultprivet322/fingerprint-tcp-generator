@@ -33,7 +33,7 @@
 
 ## 📍 Overview
 
-<p>This project implements a system for generating JA3 and JA4 fingerprints based on TLS connection parameters, enabling the identification of unique client configurations in a networked environment. The core functionality involves establishing secure TLS connections, extracting relevant cryptographic details such as the protocol version and cipher suites, and utilizing these parameters to generate MD5-based fingerprints. The system supports both JA3 and JA4 fingerprinting schemes, with JA3 focusing on basic connection parameters and JA4 extending this to include additional details like extensions and QUIC parameters. Additionally, error handling is incorporated to manage connection failures, leveraging custom exception handling to ensure robust operation in various network conditions. The project also includes unit tests to ensure the correctness of the TLS connection handling, fingerprint generation, and MD5 hashing processes.</p>
+<p>This project implements a system for generating JA3 and JA4 fingerprints based on TLS connection parameters, enabling the identification of unique client configurations in a networked environment. The core functionality involves establishing secure TLS connections, extracting relevant cryptographic details such as the protocol version and cipher suites, and utilizing these parameters to generate MD5-based fingerprints. The system supports both JA3 and JA4 fingerprinting schemes, with JA3 focusing on basic connection parameters and JA4 extending this to include additional details like extensions and QUIC parameters.</p>
 
 ---
 
