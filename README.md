@@ -1,5 +1,4 @@
 <div align="left" style="position: relative;">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>FINGERPRINT-TCP-GENERATOR</h1>
 <p align="left">
 	<img src="https://img.shields.io/github/last-commit/fizkultprivet322/fingerprint-tcp-generator?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
@@ -34,13 +33,19 @@
 
 ## 📍 Overview
 
-<code>❯ REPLACE-ME</code>
+<p❯This project implements a system for generating JA3 and JA4 fingerprints based on TLS connection parameters, enabling the identification of unique client configurations in a networked environment. The core functionality involves establishing secure TLS connections, extracting relevant cryptographic details such as the protocol version and cipher suites, and utilizing these parameters to generate MD5-based fingerprints. The system supports both JA3 and JA4 fingerprinting schemes, with JA3 focusing on basic connection parameters and JA4 extending this to include additional details like extensions and QUIC parameters. Additionally, error handling is incorporated to manage connection failures, leveraging custom exception handling to ensure robust operation in various network conditions. The project also includes unit tests to ensure the correctness of the TLS connection handling, fingerprint generation, and MD5 hashing processes.</p>
 
 ---
 
 ## 👾 Features
 
-<code>❯ REPLACE-ME</code>
+- **TLS Protocol Support**: Supports the retrieval and analysis of TLS parameters for different versions (TLS 1.2, TLS 1.3).
+- **JA3 Fingerprint Generation**: Generates JA3 fingerprints based on TLS version and cipher suites.
+- **JA4 Fingerprint Generation**: Generates JA4 fingerprints, extending JA3 with additional parameters such as extensions and QUIC parameters.
+- **TLS Parameter Extraction**: Extracts cipher suites and TLS protocol information using `SslStream` from the .NET library.
+- **Error Handling**: Handles connection errors gracefully and provides meaningful error messages for failed TLS connections.
+- **Customizability**: Allows injecting custom `SslStreamWrapper` for flexible handling of SSL stream operations.
+- **MD5 Hashing**: Utilizes MD5 hashing for generating fingerprints from TLS parameters.
 
 ---
 
@@ -240,9 +245,9 @@ Run the test suite using the following command:
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [X] **`Task 1`**: <strike>Make exceptions better</strike>
+- [ ] **`Task 2`**: Add api calls to use generated fingerprints
+- [ ] **`Task 3`**: Use web-servers to test, instead of Moq
 
 ---
 
