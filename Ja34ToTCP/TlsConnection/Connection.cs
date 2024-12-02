@@ -1,6 +1,8 @@
 ﻿using System.Net.Security;
 using System.Net.Sockets;
 using System.Security.Authentication;
+using Ja34ToTCP.Exceptions;
+
 namespace Ja34ToTCP.TlsConnection;
 
 public class Connection
@@ -27,11 +29,11 @@ public class Connection
                 return $"{wrapper.Protocol},{wrapper.CipherAlgorithm}";
             }
 
-            return $"Не удалось установить соединение с {sslProtocol} для {host}";
+            throw new TlsConnectionException($"Could not handle connection {sslProtocol} for {host}");
         }
         catch (Exception ex)
         {
-            return $"Ошибка при подключении с версией {sslProtocol}: {ex.Message}";
+            throw new TlsConnectionException($"Error trying to connect with version {sslProtocol}: {ex.Message}", ex);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Ja34ToTCP.TlsConnection;
+﻿using Ja34ToTCP.Exceptions;
+using Ja34ToTCP.TlsConnection;
 using Moq;
 using Xunit;
 using Assert = Xunit.Assert;
@@ -26,7 +27,7 @@ public class ConnectionTests
     }
 
     [Fact]
-    public void GetTlsParameters_ShouldHandleConnectionFailure()
+    public void GetTlsParameters_ShouldThrowTlsConnectionException_OnFailure()
     {
         // Arrange
         var mockSslStream = new Mock<ISslStreamWrapper>();
@@ -35,10 +36,26 @@ public class ConnectionTests
 
         var connection = new Connection(sslStream => mockSslStream.Object);
 
-        // Act
-        string result = connection.GetTlsParameters("example.com", 443, System.Security.Authentication.SslProtocols.Tls12);
+        // Act & Assert
+        var exception = Assert.Throws<TlsConnectionException>(() =>
+            connection.GetTlsParameters("example.com", 443, System.Security.Authentication.SslProtocols.Tls12));
 
-        // Assert
-        Assert.Contains("Ошибка при подключении", result);
+        Assert.Contains("Connection Failed", exception.Message);
+    }
+
+    [Fact]
+    public void GetTlsParameters_ShouldHandleUnauthenticatedStream()
+    {
+        // Arrange
+        var mockSslStream = new Mock<ISslStreamWrapper>();
+        mockSslStream.SetupGet(x => x.IsAuthenticated).Returns(false);
+
+        var connection = new Connection(sslStream => mockSslStream.Object);
+
+        // Act & Assert
+        var exception = Assert.Throws<TlsConnectionException>(() =>
+            connection.GetTlsParameters("example.com", 443, System.Security.Authentication.SslProtocols.Tls12));
+
+        Assert.Contains("Could not handle connection", exception.Message);
     }
 }
