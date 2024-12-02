@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ja34ToTCP", "Ja34ToTCP\Ja34ToTCP.csproj", "{0000CC06-2BE1-477A-8B27-653E0559F48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A001A682-6450-48CF-88EE-F7802A24E127}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0000CC06-2BE1-477A-8B27-653E0559F48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0000CC06-2BE1-477A-8B27-653E0559F48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0000CC06-2BE1-477A-8B27-653E0559F48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0000CC06-2BE1-477A-8B27-653E0559F48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A001A682-6450-48CF-88EE-F7802A24E127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A001A682-6450-48CF-88EE-F7802A24E127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A001A682-6450-48CF-88EE-F7802A24E127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A001A682-6450-48CF-88EE-F7802A24E127}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
