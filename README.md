@@ -246,7 +246,7 @@ Run the test suite using the following command:
 ## 📌 Project Roadmap
 
 - [X] **`Task 1`**: <strike>Make exceptions better</strike>
-- [X] **`Task 2`**: Add api calls
+- [X] **`Task 2`**: <strike>Add api calls</strike>
 - [ ] **`Task 3`**: Use web-servers to test, instead of Moq
 
 ---
