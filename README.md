@@ -46,7 +46,7 @@
 - **Error Handling**: Handles connection errors gracefully and provides meaningful error messages for failed TLS connections.
 - **Customizability**: Allows injecting custom `SslStreamWrapper` for flexible handling of SSL stream operations.
 - **MD5 Hashing**: Utilizes MD5 hashing for generating fingerprints from TLS parameters.
-
+- **Api Integration**: Enables the creation of custom TCP requests based on JA3/JA4 fingerprints, offering advanced integration and testing capabilities.
 ---
 
 ## 📁 Project Structure
@@ -246,7 +246,7 @@ Run the test suite using the following command:
 ## 📌 Project Roadmap
 
 - [X] **`Task 1`**: <strike>Make exceptions better</strike>
-- [ ] **`Task 2`**: Add api calls to use generated fingerprints
+- [X] **`Task 2`**: Add api calls
 - [ ] **`Task 3`**: Use web-servers to test, instead of Moq
 
 ---
